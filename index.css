@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 6vh;
+    height: 6vh;
+    
+}
+.add_book{
+    position: fixed;
+    top: 86vh;
+    left: 94vw;
+}
+.get_book_info_form{
+    border: 1px dotted black;
+    text-align: center;
+    position: fixed;
+}
