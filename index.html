@@ -35,7 +35,7 @@
 
         </div>
 
-        <div class="book_storage">
+        <div id="book_storage">
             <div class="book_info">
                 <div class="close_icon"></div>
                 <div class="written_content">
@@ -58,28 +58,38 @@
             <form action="" class="form1">
                 <div class="book_title">
                     <label for="title">Name of Book</label>
-                    <input type="text" required id="title">
+                    <input type="text" required id="title" name="titleOfBook">
 
                 </div>
                 <div class="name_author">
                     <label for="author" class="auth">Author</label>
-                    <input type="text" id="author_input" required>
+                    <input type="text" id="author_input" required name="authorName">
                 </div>
                 <div class="read_or_not">
                     <label for="read_val">Read it already?</label>
-                    <input type="checkbox" id="read_val" readonly>
+                    <input type="checkbox" id="read_val" readonly name="readValue">
+                </div>
+                <div class="no_of_pages">
+                    <label for="noOfPage">No of pages read</label>
+                    <input type="text" id="noOfPage"  name="no_of_pages" placeholder="ex-22/330">
                 </div>
                 <div class="lowermost">
                     <button id="add" type="submit">Add</button>
                     <button class="reset" type="reset">clear all</button>
                 </div>
-            </div>
+            
     
-            <button id="add_book" >
-                <img src="" alt="" class="plus_icon" >+
-            </button>
+            
 
             </form>
+
+        </div>
+
+        <button id="add_book" >
+            <img src="" alt="" class="plus_icon" >+
+        </button>
+
+            
             
 
         
