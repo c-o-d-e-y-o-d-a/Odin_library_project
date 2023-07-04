@@ -4,8 +4,8 @@ body{
 }
 
 .logo{
-    width: 6vh;
-    height: 6vh;
+    width: 7vh;
+    height: 7vh;
     
 }
 #add_book{
@@ -29,11 +29,63 @@ body{
     animation-duration: 6s;
 }
 
-@keyframes fr {
-    from{
-        display: none;
-    }
-    to{
-        display: inline-block;
-    }
+.uppertext{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.uppermost_label{
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+
+}
+.book_stack{
+    margin-top: 2.7vh;
+    justify-self: end;
+    margin-right: 1vw;
+    margin-left: 1.3vw;
+}
+.side_box{
+    justify-self: end;
+    margin-right: 8vw;
+    border: 1px solid black;
+    padding: 1vh 1vw 0vh 1vw;
+    font-size: 1.2rem;
+    display: grid;
+    height: 60%;
+    border-radius: 10px;
+    margin-top: 2vh;
+
+    
+    grid-template-rows: 1fr 6fr;
+
+}
+.heading_part{
+   
+    font-size: 1.3rem;
+    
+}
+.textOf_heading_part{
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 1vh;
+
+}
+.stats{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+.stat{
+    justify-self: center;
+}
+
+
+.book_storage{
+    background-color: rgb(234, 239, 239);
+    width: 100%;
+}
+.add_book{
+    border-radius: 50%;
+    height: 5vh;
+    width: 90vh;
 }
