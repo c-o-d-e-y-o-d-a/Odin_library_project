@@ -22,7 +22,7 @@ form.addEventListener('submit',(e)=>{
     document.getElementById('book_storage').innerHTML += newBookHtml;
 
     
-})
+})             
 
 
 
