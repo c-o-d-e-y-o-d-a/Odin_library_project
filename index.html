@@ -52,39 +52,50 @@
 
         <div class="get_book_info_form">
             <div class="upperMostLabel">
-                <div class="text">Add a new Book</div>
                 <div class="cross_icon">
                     <img src="" alt="" class="crossIcon">
                 </div>
+                <div class="text">Add a new Book</div>
+                
             </div>
-            <form action="" class="form1">
-                <div class="book_title">
-                    <label for="title">Name of Book</label>
-                    <input type="text" required id="title" name="titleOfBook">
-
-                </div>
-                <div class="name_author">
-                    <label for="author" class="auth">Author</label>
-                    <input type="text" id="author_input" required name="authorName">
-                </div>
-                <div class="read_or_not">
-                    <label for="read_val">Read it already?</label>
-                    <input type="checkbox" id="read_val" readonly name="readValue">
-                </div>
-                <div class="no_of_pages">
-                    <label for="noOfPage">No of pages read</label>
-                    <input type="text" id="noOfPage"  name="c" placeholder="ex-22/330">
-                </div>
-                <div class="lowermost">
-                    <button id="add" type="submit">Add</button>
-                    <button class="reset" type="reset">clear all</button>
-                </div>
+            <div class="formDiv">
+                
+                    <div class="insideForm">
+                        <form action="" class="form1"></form>
+                        <div class="book_title">
+                            <label for="title">Name of Book</label>
+                            <input type="text" required id="title" name="titleOfBook">
+        
+                        </div>
+                        <div class="name_author">
+                            <label for="author" class="auth">Author</label>
+                            <input type="text" id="author_input" required name="authorName">
+                        </div>
+                        <div class="read_or_not">
+                            <label for="read_val">Read it already?</label>
+                            <input type="checkbox" id="read_val" readonly name="readValue">
+                        </div>
+                        <div class="no_of_pages">
+                            <label for="noOfPage">No of pages read</label>
+                            <input type="text" id="noOfPage"  name="c" placeholder="ex-22/330">
+                        </div>
+                        <div class="lowermost">
+                            <button id="add" type="submit">Add</button>
+                            <button class="reset" type="reset">clear all</button>
+                        </div>
+                        
+                    
             
+                    
+        
+                        </form>
+
+                    </div>
+                    </div>
     
+
+            </div>
             
-
-            </form>
-
         </div>
 
         <button id="add_book" >
