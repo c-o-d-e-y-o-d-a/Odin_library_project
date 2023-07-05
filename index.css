@@ -128,3 +128,15 @@ form css styling
     display: grid;
     grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;
 }
+label{
+    margin-right: 2vw;
+
+}
+.form1>*{
+    
+}
+.inputDiv{
+    margin-bottom: 4vh;
+    
+    
+}
