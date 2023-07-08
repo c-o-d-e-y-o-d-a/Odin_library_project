@@ -106,10 +106,10 @@ form css styling
     position: fixed;
     top: 40vh;
     left: 37vw;
-    padding: 5vh;
+    padding: 3vh;
     padding-top: 0;
     background-color: rgb(202, 224, 243);
-    grid-template-rows: 1fr 4.7fr;
+    grid-template-rows: 1fr 4fr;
 
 }
 .upperMostLabel{
