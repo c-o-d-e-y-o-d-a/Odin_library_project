@@ -1,6 +1,16 @@
 const form = document.querySelector('form');
 const addButton = document.getElementById('add_book');
 const addButtonForm = document.getElementById('read_val');
+addButton.addEventListener('click',()=>{
+    document.querySelector('.get_book_info_form').style.display = 'grid';
+    
+});
+
+const formRemoveButton = document.querySelector('.crossIcon');
+formRemoveButton.addEventListener('click',()=>{
+    document.querySelector('.get_book_info_form').style.display = 'none';
+
+});
 
 
 function book_object(name_of_book,author,read_status,page_count){
