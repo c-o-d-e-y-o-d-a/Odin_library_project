@@ -11,19 +11,35 @@ body{
 }
 #add_book{
     position: fixed;
-    top: 90vh;
-    left: 90vw;
+    top: 85dvh;
+    left: 89dvw;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(161, 231, 231);
+    box-shadow: 2px 2px 2px 2px rgb(200, 224, 232);
+    padding: auto;
+}
+#add_book:hover{
+    
+    cursor: pointer;
+    
+
 }
 
 .book_info{
     border: 1px solid black;
-    background-color: bisque;
+    background-color: rgb(172, 243, 149);
     color: rgb(101, 41, 157);
-    display: inline-block;
+    display:grid;
     border-radius: 10px;
-    padding: 10px;
-    animation-name: fr ;
-    animation-duration: 6s;
+    padding: 20px;
+    font-size: 1.2rem;
+    grid-template-rows: 0.5fr 3fr 0.8fr;
+    width: 15vw;
+    margin:3vh 3vh 3vh 3vh;
+    
 }
 
 .uppertext{
@@ -83,13 +99,15 @@ body{
 
 
 .book_storage{
-    background-color: rgb(234, 239, 239);
+    background-color: rgb(227, 236, 236);
     width: 100%;
+    height: 100%;
 }
 .add_book{
     border-radius: 50%;
     height: 5vh;
-    width: 90vh;
+    width: 5vh;
+    
 }
 
 /* 
@@ -102,14 +120,17 @@ form css styling
     
     border: 1px solid black;
     text-align: center;
-    display: grid;
+    display: none;
     position: fixed;
-    top: 40vh;
+    top: 38vh;
     left: 37vw;
     padding: 3vh;
     padding-top: 0;
-    background-color: rgb(202, 224, 243);
+    background-color: rgb(168, 210, 247);
     grid-template-rows: 1fr 4fr;
+    border-radius: 10px;
+    border: none;
+    
 
 }
 .upperMostLabel{
@@ -123,6 +144,11 @@ form css styling
 }
 .cross_icon{
     background-color: blue;
+}
+
+.crossIcon{
+    height: 2vh;
+    width: 2vh;
 }
 .form1{
     display: grid;
@@ -139,4 +165,40 @@ label{
     margin-bottom: 4vh;
     
     
+}
+.plus_icon{
+    height: 7vh;
+    width: 7vh;
+}
+
+#close_icon_book_info{
+    height: 3vh;
+    width: 3vh;
+}
+.close_icon{
+    display: flex;
+    justify-content: end;
+    margin-top: 0;
+    cursor: pointer;
+}
+.close_text{
+    font-size: 0.8rem;
+    opacity: 0.8;
+    background-color: rgb(209, 235, 226);
+    display: none;
+    margin-bottom: 4px;
+    margin-left: 5px;
+}
+.close_icon:hover > .close_text{display: flex;}
+
+.read_unread_button{
+    justify-self: end;
+    padding: 6px 9px 6px 9px;
+    background-color: rgb(156, 233, 162);
+    border-radius: 8px;
+    border: 1px solid rgb(46, 87, 54);
+    font-size: 1.02rem;
+}
+.read_unread_button:hover{
+    background-color: rgb(140, 224, 147);
 }
