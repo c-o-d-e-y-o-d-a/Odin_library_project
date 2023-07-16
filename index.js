@@ -30,6 +30,7 @@ const bookList = [firstBook,];
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
+    const name_of_book = document.getElementsByClassName('');
     
     
     
@@ -52,7 +53,7 @@ function render(){
         const colorClass = '';
 
         const newBookHtml = document.createElement('div');
-        if(a.read_status==false){
+        if(a.read_status!='read'){
             colorClass='colorOfBook';
 
         }
