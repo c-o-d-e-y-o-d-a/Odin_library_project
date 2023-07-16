@@ -14,18 +14,11 @@ formRemoveButton.addEventListener('click',()=>{
 
 
 function book_object(name_of_book,author,read_status,page_count){
-    this.name1=name_of_book;
+    this.name_of_book=name_of_book;
     this.author=author;
     this.read_status=read_status;
-    this.pageCount =page_count;
-    this.changeReadStatus = () =>{
-        if(this.read_status==true){
-            this.read_status=false;
-        }
-        else{
-            this.read_status=true;
-        }
-    }
+    this.page_count =page_count;
+
     
 }
 let firstBook = Object.create(book_object)
@@ -37,34 +30,52 @@ const bookList = [firstBook,];
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
-    const fd = new FormData(form);
-
-    obj = Object.fromEntries(fd);
     
     
-    bookList.push(new book_object(obj.titleOfBook,obj.authorName,obj.c));
+    
+    bookList.push(new book_object());
+    render();
 
+    
+
+    
+
+    
+})         
+
+function render(){
     for(let i=0;i<bookList.length;i++){
+        
+        
         const a = bookList[i];
-        const newBookHtml = ` <div class="book_info">\
-        <div class="close_icon"></div>\
-        <div class="written_content">\
-            <div class="book_name">${a.name1}</div>\
-            <div class="author"> ${a.author} </div>\
-            <div class="pages_read"> ${a.pageCount}</div>\
-        </div>\
-        <div class="read_unread_button"></div>\
-        </div>`;
-        document.getElementById('book_storage').innerHTML+=newBookHtml;
+
+        const colorClass = '';
+
+        const newBookHtml = document.createElement('div');
+        if(a.read_status==false){
+            colorClass='colorOfBook';
+
+        }
+        newBookHtml.innerHTML = ` <div class="book_info ${colorClass}">
+        <div class="close_icon">
+            <div class="close_text">Remove Book</div>
+            <img src="/images/cross-symbol.png" alt="" id="close_icon_book_info">
+            
+        </div>
+        <div class="written_content">
+            <div class="book_name">${a.name_of_book}</div>
+            <div class="author">${a.author}</div>
+            <div class="pages_read">${a.page_count}</div>
+        </div>
+        <button class="read_unread_button">change read status</button>
+    </div>`;
+        document.getElementById('book_storage').appendChild(newBookHtml);
     
     
     
     }
 
-    
-
-    
-})             
+}
 
 
 

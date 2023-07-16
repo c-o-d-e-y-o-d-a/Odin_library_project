@@ -250,3 +250,7 @@ input{
     border: none;
     border-radius: 8px;
 }
+
+.colorOfBook{
+    background-color: rgb(196, 96, 96);
+}
