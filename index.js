@@ -21,16 +21,16 @@ function book_object(name_of_book,author,read_status,page_count){
 
     
 }
-let firstBook = Object.create(book_object)
-firstBook.name1='jnfjn';
-firstBook.author='donfon';
-firstBook.pageCount='sdnnfiou';
-const bookList = [firstBook,];
+
+const bookList = [];
 
 
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
-    const name_of_book = document.getElementsByClassName('');
+    const name_of_book = document.getElementsById('bookName');  
+    const authName = document.getElementById('author_input').value;
+
+    
     
     
     
@@ -42,10 +42,12 @@ form.addEventListener('submit',(e)=>{
     
 
     
-})         
+});         
 
 function render(){
+    document.getElementById('book_storage').innerHTML="";
     for(let i=0;i<bookList.length;i++){
+
         
         
         const a = bookList[i];
@@ -79,7 +81,8 @@ function render(){
 }
 
 
-
+const authName = document.getElementById('author_input').value;
+console.warn(authName);
 
 
 
