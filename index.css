@@ -245,6 +245,9 @@ label{
     border: none;
     
 }
+.subButton:hover{
+    cursor: pointer;
+}
 
 input{
     border: none;

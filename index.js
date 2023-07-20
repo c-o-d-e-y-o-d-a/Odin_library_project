@@ -23,26 +23,25 @@ function book_object(name_of_book,author,read_status,page_count){
 }
 
 const bookList = [];
+function add_book(){
+    const name_of_book = document.getElementById('bookName').value;  
+    const authName = document.getElemenById('author_input').value;
+    const read_val = document.getElementById('read_val').value;
+    const noOfPages = document.getElementById('noOfPage').value;
+    let newBook = book_object(name_of_book,authName,read_val,noOfPages);
 
 
-form.addEventListener('submit',(e)=>{
-    e.preventDefault();
-    const name_of_book = document.getElementsById('bookName');  
-    const authName = document.getElementById('author_input').value;
-
     
     
     
     
-    bookList.push(new book_object());
-    render();
-
+    bookList.push(newBook);
+    
     
 
-    
 
-    
-});         
+
+}
 
 function render(){
     document.getElementById('book_storage').innerHTML="";
@@ -81,21 +80,29 @@ function render(){
 }
 
 
-const authName = document.getElementById('author_input').value;
-console.warn(authName);
 
-
-
-
-
-
-function add_book(){
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    add_book();
     
+    render();
+
     
 
+    
+
+    
+});         
 
 
-}
+
+
+
+
+
+
+
+
 
 
 
