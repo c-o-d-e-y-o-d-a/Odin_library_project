@@ -24,11 +24,11 @@ function book_object(name_of_book,author,read_status,page_count){
 
 const bookList = [];
 function add_book(){
-    const name_of_book = document.getElementById('bookName').value;  
-    const authName = document.getElemenById('author_input').value;
+    const name_of_book = document.getElementById('title').value;  
+    const authName = document.getElementById('author_input').value;
     const read_val = document.getElementById('read_val').value;
     const noOfPages = document.getElementById('noOfPage').value;
-    let newBook = book_object(name_of_book,authName,read_val,noOfPages);
+    let newBook =  new book_object(name_of_book,authName,read_val,noOfPages);
 
 
     
@@ -47,11 +47,15 @@ function render(){
     document.getElementById('book_storage').innerHTML="";
     for(let i=0;i<bookList.length;i++){
 
-        
-        
-        const a = bookList[i];
 
-        const colorClass = '';
+        
+
+
+        
+        
+        let a = bookList[i];
+
+        let colorClass = '';
 
         const newBookHtml = document.createElement('div');
         if(a.read_status!='read'){
@@ -95,14 +99,19 @@ form.addEventListener('submit',(e)=>{
 });         
 
 
+document.getElementsByClassName('close_icon').addEventListener('click',()=>{
+    document.getElementsByClassName('book_info')[0].style.display='grid';
+});
 
 
 
 
 
 
-
-
+const closeIcon = newBookHtml.querySelector('.close_icon');
+closeIcon.addEventListener('click', () => {
+    bookList.splice(i, 1);
+    render();});
 
 
 

@@ -38,19 +38,7 @@
         </div>
 
         <div id="book_storage">
-            <div class="book_info ">
-                <div class="close_icon">
-                    <div class="close_text">Remove Book</div>
-                    <img src="/images/cross-symbol.png" alt="" id="close_icon_book_info">
-                    
-                </div>
-                <div class="written_content">
-                    <div class="book_name">Harry Potter and the Order of the Phoenix</div>
-                    <div class="author">J.K Rowling</div> 
-                    <div class="pages_read">50/100</div>
-                </div>
-                <button class="read_unread_button">change read status</button>
-            </div>
+            
 
         </div>
 
@@ -65,7 +53,7 @@
             <div class="formDiv">
                 
                    <div class="insideForm">
-                        <form action="" class="form1">
+                        <form action="" class="form1" name="form1">
 
                         
                         <div class="book_title inputDiv">
@@ -86,7 +74,7 @@
                             <input type="text" id="noOfPage"  name="c" placeholder="ex-22/330">
                         </div>
                         <div class="lowermost inputDiv">
-                            <button id="add" class="subButton" type="submit">Add</button>
+                            <button id="add" class="subButton" type="submit"  onclick="document.form1.preventDefault();">Add</button>
                             <button class="reset subButton" type="reset">clear all</button>
                         </div>
                         

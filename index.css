@@ -98,10 +98,15 @@ body{
 }
 
 
-.book_storage{
-    background-color: rgb(227, 236, 236);
+#book_storage{
+    background-color: rgb(230, 243, 243);
     width: 100%;
     height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   
+    justify-content: space-between;
+
 }
 .add_book{
     border-radius: 50%;
